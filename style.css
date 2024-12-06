@@ -1,4 +1,4 @@
-/* Fonte e cores básicas */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f2f1fa; /* Cor lilás clara de fundo */
-    color: #6a4c9c; /* Texto em lilás escuro */
+    background-color: #f2f1fa; 
+    color: #6a4c9c; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +16,7 @@ body {
 }
 
 h2, h3, h4 {
-    color: #5c3e6e; /* Tons de lilás mais escuros para os títulos */
+    color: #5c3e6e; 
 }
 
 h3.titulo-secundario {
@@ -24,7 +24,7 @@ h3.titulo-secundario {
     margin-top: 10px;
 }
 
-/* Título principal e imagem */
+
 .conteudo-titulo {
     text-align: center;
     margin-bottom: 20px;
@@ -36,13 +36,13 @@ h3.titulo-secundario {
     margin-bottom: 10px;
 }
 
-/* Estilo para o campo de senha e botões */
+
 .campo-senha {
     padding: 12px;
     font-size: 1.1rem;
     width: 100%;
     max-width: 350px;
-    border: 2px solid #e1c9f2; /* Borda suave lilás */
+    border: 2px solid #e1c9f2; 
     border-radius: 8px;
     background-color: #ffffff;
     color: #6a4c9c;
@@ -86,7 +86,7 @@ h3.titulo-secundario {
     background-color: #9e82b8;
 }
 
-/* Personalização dos parâmetros */
+
 .parametro-coluna_senha {
     display: flex;
     flex-direction: column;
@@ -121,7 +121,7 @@ h3.titulo-secundario {
     margin: 10px 0;
 }
 
-/* Força da senha */
+
 .forca {
     height: 6px;
     border-radius: 3px;
@@ -149,7 +149,7 @@ h3.titulo-secundario {
     font-size: 0.9rem;
 }
 
-/* Ajustes do layout */
+
 .parametro-senha {
     margin-bottom: 20px;
 }
