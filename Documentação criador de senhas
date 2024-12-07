@@ -1,0 +1,50 @@
+# Documentação do Processo de Desenvolvimento
+
+## Introdução
+
+Este projeto é um **Gerador de Senhas** desenvolvido com HTML, CSS e JavaScript, com o objetivo de criar um sistema interativo para gerar senhas seguras e permitir que o usuário personalize suas senhas de acordo com suas preferências (número de caracteres, tipos de caracteres, etc.). O projeto também avalia a força da senha gerada e exibe um valor de entropia para indicar o nível de segurança da senha.
+
+## Desafios Enfrentados
+
+Durante o desenvolvimento deste projeto, encontrei alguns desafios que exigiram ajustes no código e melhorias na estrutura do projeto:
+
+### 1. **Lógica de Geração de Senhas Aleatórias**
+   - **Desafio**: A geração de senhas seguras que incluíam diferentes tipos de caracteres (maiúsculas, minúsculas, números e símbolos) de forma eficiente foi um dos principais desafios. Era necessário garantir que a senha fosse realmente aleatória e que cada tipo de caractere fosse selecionado corretamente de acordo com as opções do usuário.
+   - **Solução**: Utilizei a função `Math.random()` para selecionar caracteres aleatórios de diferentes conjuntos (letras, números, símbolos), e combinei isso com as opções do usuário (caso o usuário queira ou não incluir certos tipos de caracteres).
+
+### 2. **Avaliação da Força da Senha**
+   - **Desafio**: Avaliar a força de uma senha não é uma tarefa trivial. Inicialmente, o critério de força estava muito simplificado e não levava em conta todas as possíveis combinações de caracteres. Isso resultava em avaliações imprecisas da força da senha, especialmente para senhas que continham apenas um tipo de caractere, como letras maiúsculas.
+   - **Solução**: Desenvolvi uma lógica que considerava tanto o comprimento da senha quanto a variedade de caracteres (maiúsculas, minúsculas, números e símbolos). Isso tornou a avaliação da força da senha mais precisa e flexível. A senha agora é classificada como "fraca", "média" ou "forte", com base em critérios mais robustos.
+
+### 3. **Design Responsivo e Acessível**
+   - **Desafio**: Tornar o design responsivo para que o gerador de senhas fosse usável em dispositivos móveis e desktops foi outro desafio. Inicialmente, a interface não se ajustava bem em telas menores.
+   - **Solução**: Utilizei CSS flexbox e media queries para garantir que a interface fosse responsiva e se adaptasse bem a diferentes tamanhos de tela. Além disso, selecionei uma paleta de cores suaves, como lilás, para garantir que o design fosse agradável e acessível.
+
+### 4. **Testes e Ajustes**
+   - **Desafio**: Como o projeto envolvia a geração aleatória de senhas e a avaliação da força, foi necessário realizar muitos testes para garantir que a lógica estivesse funcionando corretamente. Testar todas as combinações possíveis de caracteres e senhas geradas foi demorado.
+   - **Solução**: Realizei testes manuais rigorosos para garantir que todas as funcionalidades estivessem funcionando conforme esperado. Fiz ajustes no código conforme os testes mostravam comportamentos inesperados, como senhas que deveriam ser mais fortes, mas estavam sendo classificadas como fracas.
+
+## Como o Git Ajudou a Gerenciar o Projeto
+
+Git foi essencial para gerenciar o projeto e garantir que o processo de desenvolvimento fosse organizado e eficiente. Aqui estão algumas formas pelas quais o Git ajudou:
+
+### 1. **Controle de Versões**
+   - Utilizar o Git permitiu que eu mantivesse um histórico de todas as alterações feitas no código. Sempre que eu adicionava ou modificava uma funcionalidade, eu fazia commits com mensagens explicativas, o que me ajudou a acompanhar o progresso e reverter facilmente a versões anteriores quando necessário.
+   
+### 2. **Branches para Funcionalidades**
+   - Criei **branches** específicas para o desenvolvimento de funcionalidades (por exemplo, uma branch para a geração de senhas e outra para a implementação da avaliação de força). Isso me permitiu trabalhar de forma isolada em diferentes partes do projeto sem afetar o código principal (branch `main`). Após testar as funcionalidades de cada branch, fiz o **merge** delas de volta para a branch principal.
+
+### 3. **Colaboração e Backup**
+   - Embora este projeto tenha sido desenvolvido individualmente, o GitHub proporcionou um **backup** do código na nuvem, garantindo que o projeto estivesse seguro em caso de falhas no computador local. Além disso, o GitHub facilita a colaboração com outros desenvolvedores, caso decida expandir o projeto no futuro.
+
+### 4. **Controle de Erros e Melhorias**
+   - Durante o desenvolvimento, utilizei a funcionalidade de **issues** do GitHub para registrar bugs e melhorias. Cada vez que encontrava um problema ou recebia sugestões de melhorias, criei uma issue correspondente para me lembrar de solucioná-la. Isso ajudou a manter o desenvolvimento organizado e focado nas tarefas essenciais.
+
+### 5. **Deploy e Acompanhamento**
+   - Após o desenvolvimento, utilizei o Git para fazer o **deploy** do código e acompanhar a evolução do projeto. Isso me ajudou a garantir que a versão mais recente do código estivesse sempre disponível para testes e visualização online.
+
+## Conclusão
+
+O processo de desenvolvimento foi muito enriquecedor, pois além de aprender mais sobre JavaScript e design responsivo, também aprimorei minhas habilidades de gerenciamento de código usando Git. Os desafios enfrentados foram superados com uma combinação de testes rigorosos, ajustes no código e a utilização do Git para controlar o desenvolvimento de forma eficiente.
+
+Este gerador de senhas está agora completamente funcional e é uma ferramenta útil para gerar senhas seguras de forma rápida e personalizável.
